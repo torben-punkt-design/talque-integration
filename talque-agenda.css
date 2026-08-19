@@ -79,13 +79,19 @@
     width: 100%;
     min-width: 0;
     flex-direction: row;
-    align-items: baseline;
-    gap: 6px;
+    align-items: center;
+    gap: 8px;
     padding-right: 0;
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     border-right: none;
-    border-bottom: 3px solid #00FF00;
     text-align: left;
   }
+  .time-sidebar::after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: #00FF00;
+  }
   .time-sidebar .label-from { margin-bottom: 0; }
+  .speaker-avatars-container { display: none !important; }
 }
